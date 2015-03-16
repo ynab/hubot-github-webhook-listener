@@ -11,7 +11,7 @@ Then, in your `external-scripts.json` file, add: `"hubot-github-webhook-listener
 
 Create a new webhook for your `myuser/myrepo` repository at:
 https://github.com/myuser/myrepo/settings/hooks/new
-Set the webhook url to: <HUBOT_URL>:<PORT>/hubot/github-repo-listener
+Set the webhook url to: &lt;HUBOT_URL&gt;:&lt;PORT&gt;/hubot/github-repo-listener
 
 For example, if your hubot lives at myhubot.herokuapp.com, then you will set the webhook URL to: http://myhubot.herokuapp.com/hubot/github-repo-listener
 
