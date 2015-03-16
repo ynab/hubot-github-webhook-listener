@@ -64,11 +64,11 @@ For easy local testing, I highly recommend ngrok: https://ngrok.com/
 
 ## Copyright
 
-Copyright &copy; YouNeedABudget.com, LLC.
+Copyright &copy; [YouNeedABudget.com](http://youneedabudget.com), LLC. (Github: [YNAB](http://github.com/ynab))
 
 ## Author
 
-Taylor Brown, aka Taytay
+Taylor Brown, aka [Taytay](http://github.com/Taytay)
 
 ## License
 
