@@ -32,6 +32,8 @@ robot.emit "github-repo-event", eventBody
 
 For details on these fields, see the [Github Webhook documentation](https://developer.github.com/webhooks/).
 
+**SECURITY WARNING**: This script does not currently validate the Github Secret to verify that the webhook came from Github. So, if someone knows the URL to your Hubot, they can spoof webhooks and issue your Hubot commands. So, for now be careful about exposing commands like `destroy company`, etc. I plan to validate these webhooks soon. In the meantime, patches are welcome. :)
+
 You can consume it like so from one of your scripts:
 ```coffeescript
 @robot.on "github-repo-event", (repo_event) =>
