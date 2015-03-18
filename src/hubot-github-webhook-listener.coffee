@@ -39,9 +39,17 @@
 url           = require('url')
 querystring   = require('querystring')
 
+debug = false
+
 module.exports = (robot) ->
+
+  #TODO: Introduce secret so that these are verified:
+  # See: https://developer.github.com/webhooks/securing/ and
+  # https://gist.github.com/dcollien/c5d86c968cbc85e88286
   robot.router.post "/hubot/github-repo-listener", (req, res) ->
     try
+      if (debug)
+        robot.logger.info("Github post received: ", req)
       eventBody =
         eventType   : req.headers["x-github-event"]
         signature   : req.headers["X-Hub-Signature"]

@@ -1,6 +1,6 @@
 {
   "name": "hubot-github-webhook-listener",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "author": "Taylor Brown <taylor@youneedabudget.com>",
   "description": "Listens for github webhooks and emits an event for other Hubot scripts to respond to.",
   "keywords": [
@@ -21,7 +21,7 @@
     "url": "http://github.com/ynab/hubot-github-webhook-listener.git"
   },
   "license": "MIT",
-  "main": "./src/index.coffee",
+  "main": "./src/hubot-github-webhook-listener.coffee",
   "devDependencies": {
     "coffee-script": "~1.7.1",
     "hubot": ">= 2.6.0 < 3.0.0"
