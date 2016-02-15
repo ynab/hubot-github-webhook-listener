@@ -5,7 +5,7 @@ A [Hubot](http://hubot.github.com/) script to that makes it easy to consume [Git
 ## Installation
 
 From your hubot folder:
-`npm install --save hub-github-webhook-listener`
+`npm install --save hubot-github-webhook-listener`
 
 Then, in your `external-scripts.json` file, add: `"hubot-github-webhook-listener"` to the list.
 
