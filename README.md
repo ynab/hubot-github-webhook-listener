@@ -59,9 +59,10 @@ For easy local testing, I highly recommend ngrok: https://ngrok.com/
 2. run ngrok: `ngrok 8080`.
   It will show you a public URL like: `Forwarding  https://7a008da9.ngrok.com -> 127.0.0.1:8080`
 3. Put that URL in as your Github webhook: `https://7a008da9.ngrok.com/hubot/github-repo-listener`
-4. Run hubot locally: `HUBOT_GITHUB_TOKEN=some_log_guid bin/hubot -a github --name Hubot`
-5. Fire off a github event by interacting with your repo. Comment on an issue or a PR for example.
-6. Navigate to `http://127.0.0.1:4040/`
+4. Install the hubot-github adapter `npm install --save hubot-github-adapter`
+5. Run hubot locally: `HUBOT_GITHUB_TOKEN=some_long_guid bin/hubot -a github-adapter --name Hubot`
+6. Fire off a github event by interacting with your repo. Comment on an issue or a PR for example.
+7. Navigate to `http://127.0.0.1:4040/`
   There you can see all webhooks posted to your local machine, and can replay them as many times as you wish.
 
 ## Copyright
